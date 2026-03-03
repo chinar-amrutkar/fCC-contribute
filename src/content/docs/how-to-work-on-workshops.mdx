@@ -36,6 +36,22 @@ Some workshops, which are debugging workshop, will be called `Debugging a ...` a
 
 You can create the workshop with `pnpm run create-new-project`.
 
+### Testing Your Workshop
+
+After creating your project, there are two commands you'll need to use:
+
+#### clean:client
+
+Run `pnpm run clean:client`. This command cleans the client build artifacts and is typically needed after creating a new project to ensure the build is up to date.
+
+#### Development Server
+
+Run `pnpm run develop`. This starts the freeCodeCamp application so you can view your workshop in the full app. The app will be available at `http://localhost:8000`.
+
+:::note
+The Challenge Editor runs on port `3300`, while the full development app runs on port `8000`. Use the full app to test your workshop end-to-end.
+:::
+
 The metadata for workshops require a `blockType` property with a value of `workshop`, and a `blockLayout` with a value of `challenge-grid`.
 
 ## Using the Challenge Editor
